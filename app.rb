@@ -7,16 +7,15 @@ class App < Sinatra::Base
   end
   
   post '/team' do
-    "Hello"
-    # @name = params["name"]
-    # @coach = params[:coach]
-    # @pg = params[:pg]
-    # @sg = params[:sg]
-    # @sf = params[:sf]
-    # @pf = params[:pf]
-    # @c = params[:c]
+    @name = params["name"]
+    @coach = params[:coach]
+    @pg = params[:pg]
+    @sg = params[:sg]
+    @sf = params[:sf]
+    @pf = params[:pf]
+    @c = params[:c]
     
-    # erb :team
+    erb :team
   end
 
 end
